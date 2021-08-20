@@ -1,0 +1,512 @@
+@font-face {
+  font-family: "CrimsonText-Bold";
+  src: local("CrimsonText-Bold"),
+    url("./fonts/CrimsonText-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CrimsonText-BoldItalic";
+  src: local("CrimsonText-BoldItalic"),
+    url("./fonts/CrimsonText-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CrimsonText-Italic";
+  src: local("CrimsonText-Italic"),
+    url("./fonts/CrimsonText-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CrimsonText-Regular";
+  src: local("CrimsonText-Regular"),
+    url("./fonts/CrimsonText-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CrimsonText-SemiBold";
+  src: local("CrimsonText-SemiBold"),
+    url("./fonts/CrimsonText-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CrimsonText-SemiBoldItalic";
+  src: local("CrimsonText-SemiBoldItalic"),
+    url("./fonts/CrimsonText-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GentiumBasic-Bold";
+  src: local("GentiumBasic-Bold"),
+    url("./fonts/GentiumBasic-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GentiumBasic-BoldItalic";
+  src: local("GentiumBasic-BoldItalic"),
+    url("./fonts/GentiumBasic-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GentiumBasic-Italic";
+  src: local("GentiumBasic-Italic"),
+    url("./fonts/GentiumBasic-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GentiumBasic-Regular";
+  src: local("GentiumBasic-Regular"),
+    url("./fonts/GentiumBasic-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IMFellDoublePica-Italic";
+  src: local("IMFellDoublePica-Italic"),
+    url("./fonts/IMFellDoublePica-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IMFellDoublePica-Regular";
+  src: local("IMFellDoublePica-Regular"),
+    url("./fonts/IMFellDoublePica-Regular.ttf") format("truetype");
+}
+
+#IconSetup {
+  position: absolute;
+  top: 690px;
+  left: 290px;
+}
+
+#startBackText {
+  position: absolute;
+  align-content: center;
+  align-self: center;
+  bottom: 260px;
+}
+
+
+#homeBackText {
+  position: absolute;
+  align-content: center;
+  align-self: center;
+  bottom: 190px;
+}
+
+#startHereImage {
+  position: absolute;
+  bottom: 570px;
+  left: 400px;
+}
+
+.Background {
+  background-image: url("assets/bg.jpg");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1080px;
+  height: 1920px;
+  position: fixed;
+}
+
+#num1 {
+  position: absolute;
+  bottom: 610px;
+  left: 330px;
+  border: none;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#num2 {
+  position: absolute;
+  bottom: 755px;
+  left: 285px;
+  border: none;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#num3 {
+  position: absolute;
+  top: 903px;
+  left: 275px;
+  border: none;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#num4 {
+  position: absolute;
+  border: none;
+  top: 745px;
+  left: 315px;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#num5 {
+  position: absolute;
+  border: none;
+  top: 665px;
+  left: 490px;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#num6 {
+  position: absolute;
+  border: none;
+  top: 745px;
+  right: 315px;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#num7 {
+  position: absolute;
+  border: none;
+  top: 903px;
+  right: 275px;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#num8 {
+  position: absolute;
+  border: none;
+  bottom: 755px;
+  right: 285px;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#num9 {
+  position: absolute;
+  border: none;
+  bottom: 610px;
+  right: 330px;
+  border-radius: 55px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.glow{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+  background-color: transparent;
+  background-position: center;
+}
+
+.active {
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  background-color: transparent;
+  background-image: url("assets/icon-bg-checked.svg");
+  background-position: center;
+}
+
+.notClicked {
+  position: absolute;
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
+.alreadyClicked {
+  position: absolute;
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
+  background-image: url("assets/icon-bg-checked.svg");
+  background-position: center;
+}
+
+.seen {
+  position: absolute;
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
+  background-image: url("assets/icon-bg-checked.svg");
+  background-position: center;
+}
+
+.modal {
+  background-color: transparent;
+  background: none;
+  border: none;
+  position: relative;
+  width: 0px;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 46.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1500px;
+  width: 900px;
+  background-image: url("assets/bg-content.png");
+  transition: all 0.3s ease 0s;
+}
+
+.modal-header {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-body {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: 50%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-footer {
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+
+#custom-body {
+  position: absolute;
+  top: 200px;
+  left: 3.5px;
+}
+
+.next, .next:active, .next:active {
+  background-color: transparent;
+  border-color: transparent;
+  position: fixed;
+  outline:none;
+  box-shadow: none;
+  bottom: -6%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 10px;
+  width: 400px;
+  height: 100px;
+}
+
+.prev, .prev:active, .prev:focus {
+  background-color: transparent;
+  border-color: transparent;
+  outline:none;
+  box-shadow: none;
+  position: fixed;
+  bottom: -6%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 10px;
+  width: 400px;
+  height: 100px;
+}
+
+
+.back, .back:active, .back:focus {
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  outline:none;
+  box-shadow: none;
+  width: 470px;
+  height: 80px;
+  bottom: -13.6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 10px;
+}
+
+
+.checkButton {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  width: 28px;
+  height: 28px;
+}
+
+.start-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease 0s;
+  left: 280px;
+  bottom: 110px;
+  width: 510px;
+  height: 130px;
+}
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+  outline-style: hidden;
+}
+
+.btn-primary{
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+  outline-style: hidden;
+}
+
+.btn-primary:focus, .btn-primary:active{
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.focus, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover {
+  outline: 0;
+  box-shadow: none;
+}
+
+.modalIcon {
+  position: absolute;
+  border: none;
+  top: -61px;
+  left: 380px;
+  width: 150px;
+  height: 150px;
+}
+
+.lineTitle {
+  position: absolute;
+  top: 13.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-title {
+  font-family: IMFellDoublePica-Regular;
+  color: #382b18;
+  font-size: 72px;
+  line-height: 133%;
+  padding-top:1%;
+  padding-bottom: 4%;
+}
+
+.photoCaption {
+  color: #382b18;
+  font-family: CrimsonText-Regular;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  padding-right: 5%;
+  text-align: right;
+  font-size: 20px;
+  line-height: 133%;
+}
+
+.content {
+  font-family: CrimsonText-Regular;
+  color: #382b18;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 24px;
+  position: relative;
+  text-align: left;
+  top: 40%;
+  line-height: 133%;
+}
+
+.quoteDutch {
+  color: #382b18;
+  font-family: GentiumBasic-BoldItalic;
+  font-weight: "BoldItalic";
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 24px;
+  position: relative;
+  text-align: left;
+  top: 40.5%;
+}
+
+.quoteEng {
+  color: #382b18;
+  font-family: GentiumBasic-BoldItalic;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.5%;
+  font-size: 24px;
+  position: relative;
+  text-align: left;
+  top: 40.5%;
+}
+
+.contentLine {
+  color: #382b18;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 140%;
+  position: relative;
+  text-align: left;
+  top: 40%;
+}
+
+.citation {
+  color: #382b18;
+  font-family: CrimsonText-Regular;
+  position: relative;
+  text-align: right;
+  padding-top: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 20px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 133%;
+}
+
+/*animations */
+
