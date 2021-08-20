@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ashT95.github.io/osh-screens",
   "name": "osh-screens",
   "version": "0.1.0",
   "private": true,
@@ -14,12 +15,15 @@
     "react-image-overlay": "^1.0.5",
     "react-modal": "^3.14.3",
     "react-modal-bootstrap": "^1.1.1",
+    "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-scripts": "4.0.3",
     "reactjs-popup": "^2.0.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

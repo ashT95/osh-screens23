@@ -1,87 +1,121 @@
 
 {
+    "countdownTimer" : "30",
+
     "num1" : {
+        "photoName": "",
         "photoComment": "",
+        "photoYear": "",
         "title": "Turtle Island",
         "content": "In October 1679 an elderly Lenape man from Gowanus named Tantaqu told Dutch missionary Jasper Danckaerts that the world began with a turtle.",
         "quoteDutch": "Dit was of is allemaal water, en zo in den beginne was de wereld of aarde, totdat de schildpad zijn ronde rug geleidelijk omhoog bracht, en het water eraf gleed, waardoor de aarde droog werd gelegd.",
         "quoteEng": "At first the world was all water, when the tortoise gradually raised its round back up high, and the water ran off of it, the earth became dry.",
-        "name": " Jasper Danckaerts, “Journal of a Voyage to New York, 1679.”  "
-        
+        "citationName": " Jasper Danckaerts, “Journal of a Voyage to New York,”",
+        "citationBook":"",
+        "citationYear":"1679."
     },
 
     "num2": {
-        "photoComment":"Manhattan Lying on the North River in 1639, c. 1665.",
+        "photoName": "",
+        "photoComment":"Manhattan Lying on the North River in 1639, c.",
+        "photoYear": "1665.",
         "title": "Big House",
         "content": "On this map, Marechkawick is marked by a building called a Big House. Big Houses are homes as well as centers of government and religion, and are still built today. They symbolize the world the turtle created. Several hundred people lived in Marechkawick in the 1630s. ",
         "quoteDutch":"",
         "quoteEng":"" ,
-        "name":"" 
+        "citationName":"" 
     },
 
      "num3": {
-        "photoComment":"David Pieterszoon de Vries, Histories and Journals of Various Voyages, 1655.",
+        "photoName": "David Pieterszoon de Vries,",
+        "photoComment":"Histories and Journals of Various Voyages, ",
+        "photoYear":"1655.",
         "title" :"Corn",
         "content": "Marechkawick had a large corn field. Lenape people planted it on land they had cleared of trees. They farmed it for many years. The corn, when dried, was used to make bread.",
         "quoteDutch": "Voor Broodt ghebruyckense Mayes. Die haer Vrouwen, want so weten dar van geen Molens kloppen of stampen en tot koecken backen.",
         "quoteEng":"For bread they use corn. Since they have no mills their women beat or pound it and bake cakes of it.",
-        "name":"Adriaen van der Donck, Description of New Netherland, 1655." 
+        "citationName":"Adriaen van der Donck," ,
+        "citationBook":"Description of New Netherland,",
+        "citationYear":"1655."
     },
 
      "num4": {
-        "photoComment":"William M. Beauchamp, Wampum and Shell Articles, 1901.",
+        "photoName":"William M. Beauchamp,",
+        "photoComment":"Wampum and Shell Articles, ",
+        "photoYear":"1901.",
         "title" :"Wampum",
         "content": "Lenape people on Long Island made wampum beads from clam shells. They used wampum in their clothing, in their ceremonies, to mark agreements. and for trade. Wampum is still made today.",
         "quoteDutch": "Een seeckere specie die sy Zeewant noemen. Een werdt ghemaecht van kinkhoorens. Alle hare Verbonden, Accoorden, Vrede-Handelingen, Soenen, Voorslaghen, Versoecken, Verbintenissen en Beloften, werden alle met Schenckagien ofte Vereeringen vezegelt en krachtigh ghemaecht.",
         "quoteEng":"They call their money wampum. It is made of quahog shells. All their treaties, agreements, peace negotiations, reconciliations, proposals, requests, alliances, and promises are sealed and given force with gifts of wampum.",
-        "name":"Adriaen van der Donck, Description of New Netherland, 1655." 
+        "citationName":"Adriaen van der Donck," ,
+        "citationBook":"Description of New Netherland,",
+        "citationYear":"1655."
     },
 
      "num5": {
-        "photoComment":"Fort New Amsterdam on Manhattan, 1651.",
+        "photoName":"",
+        "photoComment":"Fort New Amsterdam on Manhattan, ",
+        "photoYear":"1651.",
         "title" :"Trade",
         "content": "The Lenape traded pottery, tools, wampum and more with other Indigenous communities for centuries. The Dutch West India Company began trading as well when they built settlements on Manhattan in 1626 to buy beaver pelts to send back to Europe.",
         "quoteDutch": "Daer werdt oock groote handel in gedreven, dickwijls by veel duysenden tessens, om dat het ontrent den Zeewant alleen valt, en meest in het landt daer de Pelterije van daen komt getrocken wert.",
         "quoteEng":"Many thousand strings of wampum are exchanged every year for beaver pelts near the sea shores where the wampum is made.",
-        "name":"Adriaen van der Donck, Description of New Netherland, 1655." 
+        "citationName":"Adriaen van der Donck," ,
+        "citationBook":"Description of New Netherland,",
+        "citationYear":"1655."
     },
 
      "num6": {
-        "photoComment":"Deed for Land on Staten Island, July 10, 1657.",
+        "photoName":"Deed for Land on Staten Island, July 10,",
+        "photoComment":"",
+        "photoYear":"1657.",
         "title" :"Agreement",
         "content": "Chief Seysey was the Lenape chief of Marechkawick. In the 1630s he sold Lenape land to Dutch West India Company settlers in exchange for protection from other Europeans. Seysey kept the best land and the corn fields for his people.",
         "quoteDutch": "Hebben wy, seyden sy, u luy Landt gegeben, daer ghy luy in woont, wy blijben evenwel Meesters van ‘tgheene wy noch voor ons behouden hebben.",
         "quoteEng":"We have, they said, given you the land where you live, but we remain masters of that which we retain for ourselves.",
-        "name":"Broad Advice to the United Netherland Provinces, 1649." 
+        "citationName":"",
+        "citationBook":"Broad Advice to the United Netherland Provinces,",
+        "citationYear":"1649." 
     },
 
      "num7": {
-        "photoComment":"Library of Congress Digital Collections.",
+         "photoName":"Library of Congress Digital Collections.",
+        "photoComment":"",
+        "photoYear":"",
         "title" :"Conflict",
         "content": "The Lenape didn’t build fences before the Europeans came. The European settlers built farms surrounded by fences, but let the pigs they brought roam free. The free-roaming pigs destroyed Lenape crops.",
         "quoteDutch": "Alsoo dagelijux groote clachten common vande wilden dat de varkens ende ander beestiael, haer mays ouylen vertreden en omvroeten. haer mays ouylen vertreden en omvroeten.",
         "quoteEng":"Serious complaints are daily made by the Lenape that their corn piles are trampled under foot and uprooted by hogs and other cattle.",
-        "name":"New Amsterdam Council Minutes, May 9, 1640." 
+        "citationName":"New Amsterdam Council Minutes,",
+        "citationBook":"",
+        "citationYear":" May 9, 1640." 
     },
 
      "num8": {
-        "photoComment":"The Figure of the Indians' Fort ... and the Manner of Destroying it, 1638.",
+        "photoName":"",
+        "photoComment":"The Figure of the Indians' Fort ... and the Manner of Destroying it, ",
+        "photoYear":"1638.",
         "title" :"War",
         "content": "In 1640, Dutch West India Company Director Wilhelm Kieft tried to make Lenape people pay taxes. The Lenape refused. In 1643, Kieft ordered Company soldiers to attack Lenape in Manhattan and New Jersey. This started a brutal war across the region.  ",
         "quoteDutch": "De Christenen op 't lange Eijlant maijz cooren van dese Wilden uijt haer Cajuijten te Steelen, Twelck sij gewaer wierden en soghten te beletten, daer over drije Wilden doot geschooten werden, die voort weder twee huijsen over't fort staende inden brant staecken. De Wilden haer van verre verthoonende riepen -- sijt gij onse vrienden? gij zijt maer Cooren dieven!",
         "quoteEng":"The Europeans on Long Island attempted to steal corn from the Lenape; who resisted until three were shot dead. In return, two houses standing opposite the fort were set on fire. The Lenape called out — be ye our friends? ye are mere corn stealers!",
-        "name":" “Journal of New Netherland,” 1647." 
+        "citationName":"“Journal of New Netherland,”" ,
+        "citationBook":"",
+        "citationYear":"1647." 
     },
 
      "num9": {
-        "photoComment":"Deed for land from Coney Island to Gowanus, September 10, 1645.",
+        "photoName":"Deed for land from Coney Island to Gowanus, September 10,",
+        "photoComment":"",
+        "photoYear":"1645.",
         "title" :"Displacement",
         "content": "Chief Seysey of Marechkawick signed agreements by drawing an arrow. After Dutch West India Company soldiers raided Lenape towns on Long Island in the summer of 1645, Seysey and his people agreed to sell their remaining land. They removed to Staten Island and then to the Hudson River Valley.  Other Lenape people removed further east on Long Island or west into New Jersey and beyond. Today, New York City is home to one of the largest intertribal Indigenous communities in the country. ",
         "quoteDutch": "",
         "quoteEng":"",
-        "name":"" 
+        "citationName":"" ,
+        "citationBook":"",
+        "citationYear":"" 
     }
-
 
 }
 

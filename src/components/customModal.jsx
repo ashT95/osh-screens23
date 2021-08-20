@@ -23,10 +23,8 @@ import IconSix from "./assets/icon-06.svg";
 import IconSeven from "./assets/icon-07.svg";
 import IconEight from "./assets/icon-08.svg";
 import IconNine from "./assets/icon-09.svg";
-import { Transition, CSSTransition } from "react-transition-group";
-import Data from "./data.json";
-import contentLine from "./assets/line-contents.svg"
-import lineTitle from "./assets/line-title.png"
+import contentLine from "./assets/line-contents.svg";
+import lineTitle from "./assets/line-title.png";
 
 const modals = [
   { id: "001", img: content01, iconImg: IconOne },
@@ -50,24 +48,24 @@ export default function CustomModal(props) {
 
   return (
     <div>
+
       {id !== null && (
 
         <Modal
-       
-   
           {...props}
           size="lg"
           aria-labelledby="contained-modal-title-vcenter"
           centered
         >
           <Modal.Header>
-            <h1>  </h1>
-            <Modal.Title id="contained-modal-title-vcenter">  {content[id].title}  </Modal.Title>
-          
+            <h1> </h1>
+            <Modal.Title id="contained-modal-title-vcenter">
+              {" "}
+              {content[id].title}{" "}
+            </Modal.Title>
           </Modal.Header>
 
           <Modal.Body>
-         
             <div className="modalID">
               <img
                 src={modals[parseInt(id.replace("num", "")) - 1].img}
@@ -79,20 +77,22 @@ export default function CustomModal(props) {
               <img src={modals[parseInt(id.replace("num", "")) - 1].iconImg} />
             </div>
 
-            <div className="photoComment">
-              <p> {content[id].photoComment} </p>
+            <div className="photoCaption">
+              {content[id].photoName}{" "}
+              <span style={{ fontFamily: "CrimsonText-Italic" }}>
+                {" "}
+                {content[id].photoComment}{" "}
+              </span>{" "}
+              {content[id].photoYear}
             </div>
 
             <div className="content">
               <p> {content[id].content} </p>
             </div>
 
-          <div className="contentLine" >
-            {content[id].quoteDutch !== "" &&
-          <img src = {contentLine} />
-            }
-          </div>
-            
+            <div className="contentLine">
+              {content[id].quoteDutch !== "" && <img src={contentLine} />}
+            </div>
 
             <div className="quoteDutch">
               <p> {content[id].quoteDutch} </p>
@@ -102,12 +102,20 @@ export default function CustomModal(props) {
               <p> {content[id].quoteEng} </p>
             </div>
 
-            <div className="name">
-              <p> {content[id].name} </p>
+            <div className="citation">
+              <p>
+                {" "}
+                {content[id].citationName}{" "}
+                <span style={{ fontFamily: "CrimsonText-Italic" }}>
+                  {" "}
+                  {content[id].citationBook}{" "}
+                </span>{" "}
+                {content[id].citationYear}{" "}
+              </p>
             </div>
 
             <div className="lineTitle">
-             <img src = {lineTitle} />
+              <img src={lineTitle} />
             </div>
           </Modal.Body>
 
@@ -128,12 +136,17 @@ export default function CustomModal(props) {
               </Button>
             )}
 
-            <Button className="back" onClick={() => handleBack()}>
+            <Button
+              variant="primary"
+              className="back"
+              onClick={() => handleBack()}
+            >
               <img src={backButton} />
             </Button>
           </Modal.Footer>
         </Modal>
       )}
+
     </div>
   );
 }

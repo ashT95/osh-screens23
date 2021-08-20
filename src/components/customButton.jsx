@@ -1,14 +1,13 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import reactDom from "react-dom";
 import "./background.css";
-import CustomModal from "./customModal";
-import Button from "react-bootstrap/Button";
 import Checkmark from "./assets/icon-check-mark.svg";
-import Checked from "./assets/icon-bg-checked.svg";
-
+import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
+import IconGlow from './assets/icon-bg-start-here.svg'
 
 export default function CustomButton(props) {
-  const { id, img, active, setActive, seen} = props;
+  const { id, img, active, setActive, seen, mod, isModalOpen} = props;
   const [alreadyClicked, setAlreadyClicked] = useState(false);
 
 
@@ -26,7 +25,8 @@ export default function CustomButton(props) {
    
     <div class="customButton">
       <div>
-
+      
+      <Fade duration={ 1000  } delay={mod * 300}>
         <button
           onClick={handleClick}
           onMouseLeave={cancelClick}
@@ -39,22 +39,31 @@ export default function CustomButton(props) {
               ? "alreadyClicked"
               :   seen.includes(id) 
               ? "seen"
-              : "notClicked" 
+              : !active && id !== null?
+              "notClicked" 
+              :"glow"
           }
         >
-          
+           
           <img src={img} />
-       
+         
           <div
             className="checkButton"
-            style={{ display: seen.includes(id)  ? "block" : "none" }}
+            style={{ display: seen.includes(id) && !active && !isModalOpen? "block" : "none" }}
           >
+            <Bounce duration = {1000} >
+     
             <img src={Checkmark} alt="checked" />
+            </Bounce>
           </div>
+
        
         </button>
-         
+      </Fade>
+
       </div>
+
+
     </div>
    
   );

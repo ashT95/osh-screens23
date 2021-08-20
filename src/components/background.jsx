@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import reactDom from "react-dom";
-import BGimg from "./assets/bg.jpg";
+import React, { useState, useEffect } from "react";
 import IconDotLine from "./assets/icon-dot-line.png";
 import "./background.css";
 import backgroundText from "./assets/text-intro.svg";
@@ -18,9 +16,9 @@ import Button from "react-bootstrap/Button";
 import startButton from "./assets/button-start.svg";
 import startHere from "./assets/start-here.png";
 import CustomModal from "./customModal";
-import { useEffect } from "react";
-import { CSSTransition } from "react-transition-group";
 import UseTimer from "./useTimer";
+import Fade from 'react-reveal/Fade';
+import Zoom from "react-reveal/Zoom";
 
 const buttons = [
   { id: "num1", img: IconOne, mod: 1 },
@@ -34,12 +32,16 @@ const buttons = [
   { id: "num9", img: IconNine, mod: 9 },
 ];
 
+
+
 export default function Background() {
   const [active, setActive] = useState(null);
   const [startpage, setStartPage] = useState(false);
   const [alreadyClicked, setAlreadyClicked] = useState([]);
 
-  const timer = UseTimer(30);
+  let content = require("./data.json");
+
+  const timer = UseTimer(content.countdownTimer);
   var temp = alreadyClicked;
   temp.push(active);
 
@@ -79,7 +81,11 @@ export default function Background() {
   return (
     <div className="HomePage">
       <div className="Background">
-        <img src={backgroundText} id="backText" />
+        <img
+          src={backgroundText}
+          style={{ display: active !== null ? "none" : "block" }}
+          id={timer !== 0 ? "homeBackText" : "startBackText"}
+        />
 
         <Button
           className="start-btn"
@@ -94,22 +100,29 @@ export default function Background() {
             <img src={IconDotLine} id="IconSetup" />
             <img src={startHere} id="startHereImage" />
 
-            {active !== null && <h1> {console.log()} </h1>}
-
+            {active !== null && <h1> {console.log(active)} </h1>}
+       
             <div className="button-div">
-              {buttons.map((button) => (
-                <CustomButton
-                  id={button.id}
-                  img={button.img}
-                  active={active === button.id ? true : false}
-                  setActive={(id) => setActive(id)}
-                  seen={alreadyClicked}
-                />
-              ))}
+    
+                {buttons.map((button) => (
+            
+                  <CustomButton
+                    id={button.id}
+                    img={button.img}
+                    mod={button.mod}
+                    active={active === button.id ? true : false}
+                    setActive={(id) => setActive(id)}
+                    seen={alreadyClicked}
+                    isModalOpen={active !== null ? true : false}
+                  />
+       
+                ))}
+ 
             </div>
           </div>
         )}
       </div>
+
       <div className="modal-div">
         <CustomModal
           id={active}
@@ -118,6 +131,7 @@ export default function Background() {
           handleNextClick={handleNext}
           handleBack={handleBack}
         />
+
       </div>
     </div>
   );
