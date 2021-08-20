@@ -312,7 +312,7 @@
   background-color: transparent;
   border-color: transparent;
   position: fixed;
-  outline:none;
+  outline:0;
   box-shadow: none;
   bottom: -6%;
   left: 73%;
@@ -326,7 +326,7 @@
 .prev, .prev:active, .prev:focus {
   background-color: transparent;
   border-color: transparent;
-  outline:none;
+  outline:0;
   box-shadow: none;
   position: fixed;
   bottom: -6%;
@@ -343,7 +343,7 @@
   position: fixed;
   background-color: transparent;
   border: none;
-  outline:none;
+  outline:0;
   box-shadow: none;
   width: 470px;
   height: 80px;
@@ -392,6 +392,13 @@
   background-color: transparent;
   border-color: transparent;
   outline-color: transparent;
+}
+
+.next.active.focus, .next.active:focus, .next.focus, .next:active.focus, .next:active:focus, .next:focus,
+.prev.active.focus, .prev.active:focus, .prev.focus, .prev:active.focus, .prev:active:focus, .prev:focus,
+.back.active.focus, .back.active:focus, .back.focus, .back:active.focus, .back:active:focus, .back:focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
